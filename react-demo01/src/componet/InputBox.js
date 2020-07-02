@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 class InputBox extends Component {
-  // state = {  }
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
   render() { 
-    return ( 
+    return (
+      <div></div>
     );
   }
 }

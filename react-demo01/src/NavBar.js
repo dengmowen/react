@@ -10,6 +10,7 @@ class NavBar extends Component {
         <div className='navigation-menu'>
           <NavLink to='/'>首页</NavLink>
           <NavLink to='/hello'>服务Item</NavLink>
+          <NavLink to='/boss'>Boss</NavLink>
         </div>
        </div>
     );

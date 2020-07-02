@@ -15,7 +15,7 @@ class ListItem extends Component {
   // componentWillUnmount() {
   //   console.log("child = componentWillUnmount=>组件将要被删除之前");
   // }
-  shouldComponentUpdate(nextProps,nexState) {
+    shouldComponentUpdate(nextProps,nexState) {
     console.log('shouldComponentUpdate=>',nextProps,nexState);
     if(nextProps.content !== this.props.content) {
       return true;
@@ -24,6 +24,7 @@ class ListItem extends Component {
     }   
   }
   render() {
+    console.log('child-render==>')
     return (
       <li onClick={this.sendParent}>
         {this.props.study}

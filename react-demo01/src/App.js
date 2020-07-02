@@ -10,6 +10,7 @@ import  { Route,Switch,Link,Redirect,NavLink, BrowserRouter as Router } from 're
 // }
 import NavBar from './NavBar';
 import Hello from "./componet/serviceItem/Hello";
+import Boss from './componet/Boss'
 class App extends Component {
   render() {
     return (
@@ -18,6 +19,7 @@ class App extends Component {
         Hello React
         <NavBar />
         <Route  path="/hello" component={Hello} />
+        <Route  path="/boss" component={Boss} />
       </div>
      </Router>
     );
