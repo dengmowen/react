@@ -42,6 +42,13 @@ npm install -dev xxx  安装到开发环境(devDependencies)
 
 请求接口 componentDidMount生命周期
 
+react-transition-group 动画组件库
+
+- Transition
+- CSSTransition
+- TrnsitionGroup
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
