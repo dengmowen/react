@@ -2,6 +2,7 @@
 import React, { Component, Fragment } from "react";
 import "./../../style/style.css";
 import ListItem from "./ListItem";
+import axios from 'axios';
 class Hello extends Component {
   constructor(props) {
     super(props);
@@ -16,9 +17,14 @@ class Hello extends Component {
   // componentWillMount(){
   //   console.log('componentWillMount组件挂载到页面');
   // }
-  // componentDidMount(){
-  //   console.log('componentDidMount组件挂载完成');
-  // }
+  componentDidMount(){
+    console.log('componentDidMount组件挂载完成');
+    axios.post('https://web-api.juejin.im/v3/web/wbbr/bgeda').then(res=>{
+      console.log('获取数据成功=>',res);
+    }).catch(err=>{
+      console.log('获取数据失败=>',err);
+    })
+  }
   // componentDidCatch(){
   //   console.log('componentDidCatch组件销毁完成');
   // }

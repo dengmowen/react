@@ -35,6 +35,13 @@ shouldComponentUpdate=>componentWillUpdate=>render=>componentDidUpdate
       }   
   }
 ```
+npm install xxx 不会安装到依赖
+npm install -g xxx  prefix(npm安装包全局路径)
+npm install -save xxx 安装到线上生成环境(dependencies)
+npm install -dev xxx  安装到开发环境(devDependencies)
+
+请求接口 componentDidMount生命周期
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
