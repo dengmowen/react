@@ -13,10 +13,15 @@ class Hello extends Component {
     this.deleteItem = this.deleteItem.bind(this);
     this.addList = this.addList.bind(this);
     this.inputChange = this.inputChange.bind(this);
+    this.getTranslationUrl = this.getTranslationUrl.bind(this);
   }
+  getTranslationUrl(params) {
+    return params.replace(/%/g, '%25');
+   }
   // componentWillMount(){
   //   console.log('componentWillMount组件挂载到页面');
   // }
+
   componentDidMount(){
     console.log('componentDidMount组件挂载完成');
     axios.post('https://web-api.juejin.im/v3/web/wbbr/bgeda').then(res=>{
